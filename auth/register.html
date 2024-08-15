@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АРВ Трейдинг</title>
+    
+</head>
+<body>
+    <div class="wrapper bg-white">
+        <img src="../img/image-removebg-preview.png " alt="">
+        
+        
+        <form class="pt-3">
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Фамилия*</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Имя*</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Отчество*</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Телефон*</label>
+                <div class="col-sm-9">
+                    <input type="tel " id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="form-control" 
+                     placeholder="+7 (___) ___-___" required >
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Email*</label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">ИНН* организации</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Юридическое<br>Название</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Брендовое название*</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Сайт*</label>
+                <div class="col-sm-9">
+                    <input type="url" class="form-control" required>
+                </div>
+            </div>
+            <div class="d-flex align-items-start">
+                <div class="remember">
+                    <label class="option text-muted">
+                        <input type="checkbox" name="isClient"> Я уже являюсь клиентом АРВ-Трейдинг
+                    </label>
+                </div>
+            </div>
+            <button class="btn btn-block text-center my-3" type="submit">Отправить заявку</button>
+            <div class="text-center pt-3 text-muted">
+                <hr>
+                <a href="../auth/auth.html">У меня уже есть аккаунт</a>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+</body>
+</html>
