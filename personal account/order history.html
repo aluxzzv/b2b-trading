@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="АРВ Трейдинг - Каталог печатного оборудования и расходных материалов.">
+    
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="../css/order history.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../img/image-removebg-preview.png" alt="АРВ Лого">
+            </div>
+            <div class="contact-info">
+                <span class="phone" id="phone">+7 (495) 580-55-56</span><br>
+                <span class="hours" id="hours">Режим работы: 9:00 - 18:00</span>
+            </div>
+            <input type="text" class="icon" placeholder="">
+            <div class="user-info">
+                <span class="username"><i class="bi bi-person-fill"></i><a href="../personal account/personal account.html">mbyushel</a></span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../catalog/catalog.html">Каталог</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Акции</a></li>
+            <div class="basket" id="basket">
+                <li><a href="#"><i class="bi bi-cart2"></i>Корзина</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <main>
+        <aside class="filter">
+            <h3>Фильтр</h3>
+            <div class="filter-section">
+                <button class="filter-toggle" onclick="toggleFilter('status-filter')">Статус</button>
+                <div class="filter-content" id="status-filter">
+                    <label><input type="checkbox"> Ожидается аванс (до обеспечения)</label><br>
+                    <label><input type="checkbox"> Отгружен</label><br>
+                    <label><input type="checkbox"> Принят, не обработан</label><br>
+                    <label><input type="checkbox"> Готов к отгрузке</label><br>
+                    <label><input type="checkbox"> Ожидается обеспечение</label><br>
+                    <label><input type="checkbox"> Ожидается согласование</label><br>
+                    <label><input type="checkbox"> Готов к закрытию</label><br>
+                    <label><input type="checkbox"> В процессе отгрузки</label><br>
+                    <label><input type="checkbox"> Ожидается предоплата (до отгрузки)</label><br>
+                    <label><input type="checkbox"> Выполнен</label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <button class="filter-toggle" onclick="toggleFilter('payment-filter')">Оплата</button>
+                <div class="filter-content" id="payment-filter">
+                    <select>
+                        <option>Все</option>
+                        <option>Оплачено</option>
+                        <option>Не оплачено</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-section">
+                <button class="filter-toggle" onclick="toggleFilter('date-filter')">Дата создания</button>
+                <div class="filter-content" id="date-filter">
+                    <input type="date" placeholder="Начало периода"> - 
+                    <input type="date" placeholder="Конец периода">
+                </div>
+            </div>
+        </aside>
+
+        <section class="orders">
+            <h2>Заказы</h2>
+            <p>Заказы не найдены</p>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

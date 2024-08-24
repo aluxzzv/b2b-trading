@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="АРВ Трейдинг - Каталог печатного оборудования и расходных материалов.">
+    
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="../css/basket.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../img/image-removebg-preview.png" alt="АРВ Лого">
+            </div>
+            <div class="contact-info">
+                <span class="phone" id="phone">+7 (495) 580-55-56</span><br>
+                <span class="hours" id="hours">Режим работы: 9:00 - 18:00</span>
+            </div>
+            <input type="text" class="icon" placeholder="">
+            <div class="user-info">
+                <span class="username"><i class="bi bi-person-fill"></i><a href="../personal account/personal account.html">mbyushel</a></span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../catalog/catalog.html">Каталог</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Акции</a></li>
+            <div class="basket" id="basket">
+                <li><a href="#"><i class="bi bi-cart2"></i>Корзина</a></li>
+            </div>
+        </ul>
+    </nav>
+<body>
+    <div class="cart-container">
+        <h2>Корзина</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Товар</th>
+                    <th>Артикул</th>
+                    <th>Цена</th>
+                    
+                    <th>Количество</th>
+                    <th>Стоимость</th>
+                    
+                </tr>
+            </thead>
+            
+            <tbody>
+                
+                <tr>
+                    <td>
+                        <img src="kyocera.png" alt="Kyocera">
+                        TR-475_TY УЗЕЛ ПЕРЕНОСА ИЗОБРАЖЕНИЯ FS-6025MFP/6030MFP/TASKALFA-255/255B/305 ТЕХУПАКОВКА
+                    </td>
+                    <td>TR-475_TY</td>
+                    <td><span class="old-price">500.00 руб.</span> 495.00 руб.</td>
+                    <td><input type="number" value="10" min="1" class="quantity"></td>
+                    <td>4950.00 руб.</td>
+                    <td><button class="remove-item">✖</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="epson.png" alt="Epson">
+                        МФУ EPSON WF-7830DTWF
+                    </td>
+                    <td>C11CH68403</td>
+                    <td><span class="old-price">42000.00 руб.</span> 41580.00 руб.</td>
+                    <td><input type="number" value="1" min="1" class="quantity"></td>
+                    <td>41580.00 руб.</td>
+                    <td><button class="remove-item">✖</button></td>
+                </tr>
+                <!-- Repeat for each item -->
+            </tbody>
+        </table>
+        <div class="total-container">
+            <span>Итого:</span>
+            <span class="total-amount">382140.00 руб.</span>
+        </div>
+        <button class="checkout-button">Оформить заказ</button>
+    </div>
+    <script src="../basket.js"></script>
+</body>
+</html>

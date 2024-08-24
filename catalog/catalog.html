@@ -5,36 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="АРВ Трейдинг - Каталог печатного оборудования и расходных материалов.">
-    
     <title>АРВ Трейдинг</title>
-    <link rel="stylesheet" href="/css/catalog.css">
+    <link rel="stylesheet" href="../css/catalog.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #f5f5f5;
+            position: relative;
+        }
+
+        .logo img {
+            max-width: 100px;
+        }
+
+        .contact-info {
+            text-align: center;
+            flex: 1;
+        }
+
+        .search-account-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container {
+            margin-right: 15px;
+            position: relative;
+        }
+
+        .search-container input[type="search"] {
+            padding: 5px 30px 5px 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .search-container i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-info a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin-right: 30px;
+        }
+
+        .hamburger span {
+            height: 3px;
+            width: 25px;
+            background: black;
+            margin-bottom: 4px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-wrap: wrap;
+                flex-direction: row;
+
+
+            }
+            .basket{
+                font-size: 14px;
+                margin-left:revert-layer;
+            }
+
+            .logo, .contact-info {
+                order: 1;
+                width: 100%;
+
+            }
+            
+            
+
+            .search-account-container {
+                order: 3;
+                width: 90%;
+                justify-content: center;
+                margin-top: 10px;
+                margin-left:20px
+            }
+
+            .hamburger {
+                display: flex;
+                order: 2;
+                margin-left: auto;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                
+                background-color: #333;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <div class="header-content">
-            <div class="logo">
-                <img src="../img/image-removebg-preview.png" alt="АРВ Лого">
+        <div class="logo">
+            <img src="../img/image-removebg-preview.png" alt="АРВ Лого">
+        </div>
+        <div class="contact-info">
+            <span class="phone" id="phone">+7 (495) 580-55-56</span><br>
+            <span class="hours" id="hours">Режим работы: 9:00 - 18:00</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="search-account-container">
+            <div class="search-container">
+                <input type="search" placeholder="Поиск...">
+                <i class="bi bi-search"></i>
             </div>
-            <div class="contact-info">
-                <span class="phone" id="phone">+7 (495) 580-55-56</span><br>
-                <span class="hours" id="hours">Режим работы: 9:00 - 18:00</span>
-            </div>
-            <input type="text" class="icon" placeholder="">
             <div class="user-info">
-                <span class="username"><i class="bi bi-person-fill"></i><a href="../personal account/personal account.html">mbyushel</a></span>
+                <i class="bi bi-person-fill"></i>
+                <a href="../personal account/personal account.html">mbyushel</a>
             </div>
         </div>
     </header>
 
     <nav>
-        <ul>
+        <ul id="nav-links">
             <li><a href="#">Каталог</a></li>
             <li><a href="#">О компании</a></li>
             <li><a href="#">Контакты</a></li>
             <li><a href="#">Акции</a></li>
             <div class="basket" id="basket">
-                <li><a href="#"><i class="bi bi-cart2"></i>Корзина</a></li>
+                <li><a href="#"><i class="bi bi-cart2"></i> Корзина</a></li>
             </div>
         </ul>
     </nav>
@@ -57,22 +198,22 @@
                 <h2>Расходные материалы</h2>
                 <ul>
                     <li>F+Imaging</li>
-                    <li>1.HP</li>
+                    <li>HP</li>
                     <li>PANTUM</li>
-                    <li>2.CANON</li>
-                    <li>3.XEROX</li>
-                    <li>4.RICOH</li>
+                    <li>CANON</li>
+                    <li>XEROX</li>
+                    <li>RICOH</li>
                 </ul>
             </div>
             <div class="catalog-column">
                 <ul>
-                    <li>5.BROTHER</li>
-                    <li>5.KONICA-MINOLTA</li>
-                    <li>5.KYOCERA</li>
-                    <li>5.LEXMARK</li>
-                    <li>5.OKI</li>
-                    <li>5.PANASONIC</li>
-                    <li>5.SAMSUNG</li>
+                    <li>BROTHER</li>
+                    <li>KONICA-MINOLTA</li>
+                    <li>KYOCERA</li>
+                    <li>LEXMARK</li>
+                    <li>OKI</li>
+                    <li>PANASONIC</li>
+                    <li>SAMSUNG</li>
                 </ul>
             </div>
             <div class="catalog-column">
@@ -86,5 +227,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
